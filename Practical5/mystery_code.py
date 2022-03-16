@@ -16,3 +16,5 @@ while progress<10:
 	n = randint(1,100)
 
 print(n)
+
+# the results will be random numbers in 1 to 100
