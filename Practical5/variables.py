@@ -6,8 +6,17 @@ d = b-c
 e = a-b
 print(d)
 print(e)
-# d is 4218249, e is 15026781, e is greater than d, the rate of new cases is greater in 2021
+# d is 4218249, e is 15026781, e is greater than d.
+#the rate of new cases is greater in 2021
+#2021 has the greatest number of new COVID-19 cases.
+
 #3.2 Booleans
+
+X = ""
+Y = ""
+W= X and Y
+print(W)
+#result is empty
 
 X=""
 Y="something"
@@ -19,19 +28,19 @@ X = "something"
 Y = "something"
 W= X and Y
 print(W)
-#result is something
+#result is "something"
 
 X = "something"
 Y = "anything"
 W = X and Y
 print(W)
-#result is anything
+#result is "anything"
 
 X = ""
 Y = "something"
 W= X or Y
 print(W)
-#result is something
+#result is "something"
 
 X = ""
 Y = ""
@@ -43,13 +52,13 @@ X = "something"
 Y = "something"
 W= X or Y
 print(W)
-#result is something
+#result is "something"
 
 X = "something"
 Y = "anything"
 W = X or Y
 print(W)
-#result is something
+#result is "something"
 
 
 
