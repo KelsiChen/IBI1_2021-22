@@ -18,4 +18,4 @@ for n in range(1,11):
 #36
 #45
 #55
-#the "#" in front of numbers can be omitted
+#the "#" in front of numbers can be omitted.
