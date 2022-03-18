@@ -39,8 +39,6 @@ p=(n**2+n+2)/2
 while p<64:
         n+=1
         p=(n**2+n+2)/2
-        if p > 64:
-           break
 
 print(n)
 
