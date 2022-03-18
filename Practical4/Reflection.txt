@@ -1,0 +1,9 @@
+This is my first try to use GitHub.
+Anyway, it's a little hard.
+I met some obstacles when using git push.
+But now I know how to do it.
+
+It must follow the order:clone -> add -> commit -> push
+
+cong wei you guo ru ci mei miao de kai ju !
+qing wei wo huan hu !
