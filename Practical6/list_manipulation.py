@@ -1,4 +1,4 @@
-\#create and sort the array, 
+#create and sort the array, 
 #then draw the boxplot of it,
 #then calculate the average and judge.
 
@@ -24,7 +24,6 @@ notch = False
 plt.show()
 
 #calculate the average
-sum(sortedmarks)
 average=sum(sortedmarks)/len(sortedmarks)
 #judge
 if average>=60:
