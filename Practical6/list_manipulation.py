@@ -1,4 +1,4 @@
-#create and sort the array, 
+\#create and sort the array, 
 #then draw the boxplot of it,
 #then calculate the average and judge.
 
@@ -27,7 +27,9 @@ plt.show()
 sum(sortedmarks)
 average=sum(sortedmarks)/len(sortedmarks)
 #judge
-print(average>=60)
-
-#The result is False, so the average is below 60, 
+if average>=60:
+ print("Rob passed")
+else:
+ print("Rob failed")
+#The result is "Rob failed"
 #So Rob failed.
