@@ -23,7 +23,7 @@ for x in Location:
    if x=="Afghanistan":
     my_rows.append(True)
    else:
-my_rows.append(False)
+    my_rows.append(False)
 
 print(covid_data.loc[my_rows, "total_cases" ])
 
