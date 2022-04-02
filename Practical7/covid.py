@@ -23,12 +23,13 @@ for x in Location:
    if x=="Afghanistan":
     my_rows.append(True)
    else:
-    my_rows.append(False)
+my_rows.append(False)
+
+print(covid_data.loc[my_rows, "total_cases" ])
 
 
 
-#Using a Boolean to show "total cases" for all information about China.
-covid_data.loc[my_rows, "total_cases" ]
+#Using a Boolean to select all information about China.
 Location=covid_data.loc[ : ,"location"]
 Location= np.array(Location)
 my_rows=[]
@@ -53,8 +54,8 @@ print(average_new_deaths)
 
 
 
-#The boxplot of new cases in China
-plt.boxplot(china_new_cases,
+#The boxplot of new cases and new deaths in China
+plt.boxplot([china_new_cases, china_new_deaths],
 vert=True,
 whis = 1.5,
 patch_artist = True,
@@ -63,25 +64,14 @@ showbox = True,
 showcaps = True,
 showfliers = False,
 notch = False,
+labels= [“New cases”, “New deaths”],
 )
+plt.title("Boxplot of new cases and new deaths in China")
 plt.show()
-
-#The boxplot of new deaths in China
-plt.boxplot(china_new_deaths,
-vert=True,
-whis = 1.5,
-patch_artist = True,
-meanline = False,
-showbox = True,
-showcaps = True,
-showfliers = False,
-notch = False,
-)
-plt.show()
-
 
 
 #Plot describing both new cases and new deaths in China over time.
+china_dates=covid_data.loc[my_rows, "date" ]
 plt.plot(china_dates, china_new_cases, 'b-', label='New cases in China over time')
 plt.plot(china_dates, china_new_deaths, 'r-', label='New deaths in China over time')
 plt.title("New cases and new deaths in China over time")
