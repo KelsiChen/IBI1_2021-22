@@ -1,10 +1,10 @@
 Question.txt
 
-#How do the total cases and deaths in America change over time?
+#How do the total cases and total deaths in the United States change over time?
 
 #The codes answering the question starts at line 90.
 
 #From 2020-03-08, the number of total cases started increasing rapidly.
 #At 2020-03-28, the number has increased over 150000.
 
-#The total death did not increase a lot until 2020-03-28. It was around 3000.
+#The total deaths did not increase a lot until 2020-03-28. It was around 3000.
