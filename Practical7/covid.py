@@ -89,7 +89,6 @@ plt.show()
 
 #Codes answering questions in question.txt
 
-covid_data.loc[my_rows, "total_cases" ]
 Location=covid_data.loc[ : ,"location"]
 Location= np.array(Location)
 my_rows=[]
