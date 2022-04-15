@@ -1,12 +1,11 @@
-file=input()
+filename=input()
 
 #Now input the file name.
 # I used the file below to test:
-#C:\\Users\\50100\\Desktop\\Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa
-
+#C:\\Users\\50100\\Desktop\\count.txt
 
 #First, open the file and store the data.
-with open(file) as fa:
+with open(C:\\Users\\50100\\Desktop\\Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa) as fa:
 #The data will be stored in the dict "fa_dict".
     fa_dict = {}
     for line in fa:
@@ -46,7 +45,7 @@ for x in seq:
     frag.append(ment)
 
 #Create the file.
-file = open('count_cut_genes.fa','w')
+file = open(filename,'w')
 for i in range(0,len(seq)):
 # Store information in an 'int' first.
     line1=name[i]
