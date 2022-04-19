@@ -1,5 +1,5 @@
 # What does this piece of code do?
-# Answer: This piece of code will provide a random number in the range of 1 to 100.
+# Answer: make the loop run 10 times and choose a number from (1,100) randomly
 
 # Import libraries
 # randint allows drawing a random number,
