@@ -1,3 +1,4 @@
+
 #import libraries，create the environment
 import os
 import pandas as pd
@@ -66,6 +67,7 @@ showfliers = False,
 notch = False,
 labels= [“New cases”, “New deaths”],
 )
+plt.xlabel("Case Numbers")
 plt.title("Boxplot of new cases and new deaths in China")
 plt.show()
 
