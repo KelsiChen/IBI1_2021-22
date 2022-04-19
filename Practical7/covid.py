@@ -67,7 +67,7 @@ showfliers = False,
 notch = False,
 labels= [“New cases”, “New deaths”],
 )
-plt.xlabel("Case Numbers")
+plt.ylabel("Case Numbers")
 plt.title("Boxplot of new cases and new deaths in China")
 plt.show()
 
