@@ -20,8 +20,13 @@ x= paternal_age
 y= chd
 
 plt.scatter(x, y, marker='o')
+plt.xlabel("Paternal age")
+plt.ylabel("Relative risk of congenital heart disease")
 plt.show()
 
-#Here the paternal age I choose is 50. 
-print(dict1[50])
-#and the relative rate is 1.23,which is correct to the age 50.
+# give a paternal age from the input list above
+x = input('paternal_age = ')
+# according to the index of paternal age, find its corresponding value in "chd"
+y=paternal_age.index(int(x))
+# output the answer
+print('The risk of congenital heart disease for the offspring is ' + str(chd[y]))
