@@ -5,5 +5,5 @@ But now I know how to do it.
 
 It must follow the order:clone -> add -> commit -> push
 
-cong wei you guo ru ci mei miao de kai ju !
-qing wei wo huan hu !
+cong wei you guo ru ci mei miao de kai ju
+qing wei wo huan hu
