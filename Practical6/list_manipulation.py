@@ -10,20 +10,18 @@ sortedmarks= sorted(marks)
 print(sortedmarks)
 
 #draw the boxplot
+
 import matplotlib.pyplot as plt
-plt.boxplot(sortedmarks,
-vert=True,
-whis = 1.5,
-patch_artist = True,
-meanline = False,
-showbox = True,
-showcaps = True,
-showfliers = True,
-notch = False
-)
+fig, ax = plt.subplots()
+ax.boxplot(sortedmarks)
+ax.set_xticklabels(["Rob"])
+ax.set_ylabel("IBI Marks")
+ax.set_xlabel("Student Name")
+
 plt.show()
 
 #calculate the average
+sum(sortedmarks)
 average=sum(sortedmarks)/len(sortedmarks)
 #judge
 if average>=60:
