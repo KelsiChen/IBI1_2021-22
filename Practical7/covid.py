@@ -106,7 +106,7 @@ US_dates=covid_data.loc[my_rows, "date" ]
 
 plt.plot(US_dates, US_total_cases, 'b-', label='Total cases in the US over time')
 plt.plot(US_dates, US_total_deaths, 'r-', label='Total deaths in the US over time')
-plt.title("New cases and new deaths in the US over time")
+plt.title("Total cases and total deaths in the US over time")
 plt.xlabel("Dates")
 plt.ylabel("Numbers")
 plt.xticks(US_dates.iloc[0:len(US_dates):4],rotation=-90)
