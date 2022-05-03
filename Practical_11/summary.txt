@@ -1,0 +1,13 @@
+
+The blosum score between human and mouse is 1490\
+The blosum score between human and random is -145\
+The blosum score between moouse and random is -138\
+The percentage of identical amino acids between human and mouse: 96.56357388316151%\
+The percentage of identical amino acids between human and random: 3.4364261168384878%\
+The percentage of identical amino acids between mouse and random: 3.7800687285223367%\
+There exists high similarities between the human sample and the mouse sample.\
+There exists low similarities between the human sample and the random sample.\
+There exists low similarities between the mouse sample and the random sample.\
+\
+The similarities of amino acid sequences between human sample and mouse sample may indicate that human and mouse have a same ancestor thousands of years ago. \
+Because of the high similarities, we can use mouse as an important living experimental subject to substitute human body. Instead of testing on our human body directly, we can inject new drugs into mice to test their side effects.
