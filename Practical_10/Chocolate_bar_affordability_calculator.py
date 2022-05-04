@@ -11,3 +11,11 @@ money_left=float(total_money)-float(single_price)*chocolate_number
 
 print("The number of chocolate bars the user is able to afford:",chocolate_number)
 print("The money left:",money_left)
+
+#Example:
+#Input:
+#	total money:120.6
+#	the price of one chololate bar:2.3
+#Output:
+#	The number of chocolate bars the user is able to afford: 52
+#	The money left: 1.0
