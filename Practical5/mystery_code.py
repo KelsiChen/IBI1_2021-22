@@ -1,5 +1,5 @@
 # What does this piece of code do?
-# Answer: make the loop run 10 times and choose a number from 1 to 100 randomly
+# Answer: Make the loop run 10 times to choose ten random numbers between 1 and 100 and then print the last number.
 
 # Import libraries
 # randint allows drawing a random number,
