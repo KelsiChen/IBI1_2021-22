@@ -39,10 +39,10 @@ seq = re.findall(r'[A-Z]+GAATTC[A-Z]+', res)
 
 
 # Calculate fragment number and store it in a list.
-frag=[]
+fragment=[]
 for x in seq:
-    ment=x.count('GAATTC')+1
-    frag.append(ment)
+    clip=x.count('GAATTC')+1
+    fragment.append(clip)
 
 #Create the file.
 file = open(filename,'w')
@@ -51,7 +51,7 @@ for i in range(0,len(seq)):
     line1=name[i]
 # Variable 'int' must be turned into a 'str' to be written in the file.
     line1=str(line1)
-    line2=frag[i]
+    line2=fragment[i]
     line2=str(line2)
     line3=seq[i]
     line3=str(line3)
