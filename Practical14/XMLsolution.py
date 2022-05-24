@@ -12,11 +12,11 @@ terms = collection.getElementsByTagName("term")
 #We need to find all child nodes of one node and its child nodes until it reaches the bottom.
 #So we can get the number through calculating the number of parent nodes of the child nodes.
 #This function can get the id  of parent nodes
-def find_parents(node_id, parent_ids):
+def findnodes(node_id, parent_ids):
     mediate_ids = nodefamily[node_id]
     for mediate_id in mediate_ids:
         parent_ids.add(mediate_id) 
-        find_parents(mediate_id, parent_ids)
+        findnodes(mediate_id, parent_ids)
 
 
 nodefamily = {}
@@ -36,7 +36,7 @@ for term in terms:
 #This equals the number of all child nodes of each parent node.
 for key in nodefamily.keys():
     parent_ids = set()
-    find_parents(key, parent_ids)
+    findnodes(key, parent_ids)
     for parent_id in parent_ids:
         result_all[parent_id] += 1
 
