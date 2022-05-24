@@ -17,17 +17,20 @@ marks=[45,36,86,57,53,92,65,45]
 #showcaps: whether it shows the maximum and minimum lines.
 #showfliers: whether it shows the outliers.
 #notch: whether there exists gaps in the middle of the box.
+
+
 plt.boxplot(marks,
-            vert = False,
+            vert = True,
             whis = 2.28,
             patch_artist = True,
             meanline = True,
+            labels = "A",
             showbox = True,
             showcaps = False,
             showfliers = False,
-            notch = False
+            notch = False,
               )
-
+plt.title("the distribution of Rob's marks")
 #show the boxplot.
 plt.show()
 
