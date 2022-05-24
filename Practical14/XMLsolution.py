@@ -22,14 +22,14 @@ def find_parents(node_id, parent_ids):
 nodefamily = {}
 result_all = {}
 
-#We need to get all nodes of each term 
+#We need to get all nodes of each term
 #The information will be stored in the nodefamily.
-for term in terms:  
-    node_id = term.getElementsByTagName("id")[0].childNodes[0].data 
-    mediate_ids = [] #对于父节点
-    for is_a in term.getElementsByTagName("is_a"): 
-        mediate_ids.append(is_a.childNodes[0].data) 
-    nodefamily[node_id] = mediate_ids 
+for term in terms:
+    node_id = term.getElementsByTagName("id")[0].childNodes[0].data
+    mediate_ids = []
+    for is_a in term.getElementsByTagName("is_a"):
+        mediate_ids.append(is_a.childNodes[0].data)
+    nodefamily[node_id] = mediate_ids
     result_all[node_id] = 0
 
 #Now we need to calculate all parent nodes of each child node.
