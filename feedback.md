@@ -22,11 +22,8 @@ Problem 1: I did not compare d and e.
 Solution: I added codes to compare. You can test it in my portfolio.
 
         if d < e:
-
 	  print("The rate of new cases was greater in 2021")
-
 	else:
-
 	  print("The rate of new cases was greater in 2020")
 
 The result is “The rate of new cases is greater in 2021”.
