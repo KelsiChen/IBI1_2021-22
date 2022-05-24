@@ -1,8 +1,8 @@
 filename=input()
 
 #Now input the file name.
-# I used the file below to test:
-#C:\\Users\\50100\\Desktop\\count.txt
+# I used the filename below to test:
+#C:\\Users\\50100\\Desktop\\count.fa
 
 #First, open the file and store the data.
 with open(C:\\Users\\50100\\Desktop\\Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa) as fa:
