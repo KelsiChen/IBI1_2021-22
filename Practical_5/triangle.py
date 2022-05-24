@@ -12,6 +12,6 @@ while counter <= number:
 	sum=sum+counter
 	counter += 1
 
-#print the sum of each triangle sequences.
-print("sum:",sum)
+	#print the sum of each triangle sequences.
+	print("sum:",sum)
 
