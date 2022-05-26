@@ -13,21 +13,24 @@ data={}
 
 for term in terms:
 	parent_ids=[]
-	ids=term.getElementsByTagName('id')[0]
+	ids=term.getElementsByTagName('id')[0].childNodes[0].data
 	data[ids]=0
-
 	for is_a in term.getElementsByTagName('is_a'):
 		parent_ids.append(is_a.childNodes[0].data)
 	number[ids]=parent_ids
 
-for i in number.keys():
-	parents=set()
-	parent_ids=number[i]
+#find all the parent nodes of each child nodes: this part of the codes was taught by one of my friends. He taught me the basic logic of the program, and I imitated his writing logic.
+def nodes_number(id, parents):
+	parent_ids=number[id]
 	for parent_id in parent_ids:
 		parents.add(parent_id)
+		nodes_number(parent_id,parents)
+
+for i in number.keys():
+	parents=set()
+	nodes_number(i,parents)
 	for parent in parents:
 		data[parent] += 1
-
 distribution=data.values()
 
 plt.boxplot(distribution,
@@ -37,7 +40,7 @@ plt.boxplot(distribution,
             meanline = True,
             showbox = True,
             showcaps = False,
-            showfliers = False,
+            showfliers = True,
             notch = False,
               )
 plt.xlabel("total terms")
@@ -51,14 +54,17 @@ term = []
 node = []
 translation = []
 
-for i in term:
+for i in terms:
 	x = i.getElementsByTagName("defstr")[0]
-	y = i.getElementsByTagName("id")[0]
-	defstr= x.childNodes[0]
-	id = y.childNodes[0]
+	defstr=x.childNodes[0]
 	if 'translation' in defstr.data:
 		term.append(i)
-	node.append(id)
+
+for i in term:
+
+	y = i.getElementsByTagName("id")[0]
+	id = y.childNodes[0]
+	node.append(id.data)
 
 for i in node:
 	translation.append(data[i])
@@ -71,7 +77,7 @@ plt.boxplot(translation,
             meanline = True,
             showbox = True,
             showcaps = False,
-            showfliers = False,
+            showfliers = True,
             notch = False,
               )
 plt.xlabel("total terms of 'translation'")
@@ -82,8 +88,11 @@ plt.title("the distribution of childnotes in terms with 'translation'")
 plt.show()
 
 
-average1= sum(data.values())/len(data.values())
-average2= sum(translation)/len(translation)
+total_sum=sum(data.values())
+total_translation=sum(translation)
+
+average1= total_sum/len(data.values())
+average2= total_translation/len(translation)
 print("The overall Gene Ontology terms have", average1, "child nodes on average.")
 print("The 'translation' terms have", average2, "child nodes on average.")
 
@@ -91,5 +100,3 @@ if average1 > average2:
    print("The 'translation' terms contains, on average, a greater number of child nodes than the overall Gene Ontology.")
 else:
    print("The 'translation' terms contains, on average, a smaller number of child nodes than the overall Gene Ontology.")
-        
-            
